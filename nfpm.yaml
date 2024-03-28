@@ -1,0 +1,20 @@
+name: "garage"
+arch: "amd64"
+platform: "linux"
+version: "0.9.3"
+section: "default"
+priority: "extra"
+maintainer: "deuxfleurs"
+description: |
+  Open-source distributed object storage service tailored for
+  self-hosting
+vendor: "DeuxFleurs"
+homepage: "https://garagehq.deuxfleurs.fr/"
+license: "AGPLv3"
+contents:
+- src: ./garage
+  dst: /usr/bin/garage
+- src: ./garage.service
+  dst: /usr/lib/systemd/system/
+scripts:
+  postinstall: ./scripts/postinstall.sh

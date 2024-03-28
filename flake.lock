@@ -1,0 +1,49 @@
+{
+  "nodes": {
+    "nix-vm-test": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1711631649,
+        "narHash": "sha256-ro+VGTbHWNsc9maaZL2tfvKNtbSCdGPj7HgMvBCbyZk=",
+        "owner": "numtide",
+        "repo": "nix-vm-test",
+        "rev": "40c546a6a736bffae4dbf4a8584c11189fd7dcf8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "ref": "pic/mount-relative",
+        "repo": "nix-vm-test",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1711523803,
+        "narHash": "sha256-UKcYiHWHQynzj6CN/vTcix4yd1eCu1uFdsuarupdCQQ=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2726f127c15a4cc9810843b96cad73c7eb39e443",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nix-vm-test": "nix-vm-test",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
